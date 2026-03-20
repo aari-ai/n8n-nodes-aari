@@ -1,6 +1,6 @@
 {
   "name": "@aari/n8n-nodes-aari",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "AARI Execution Firewall — n8n community node",
   "keywords": [
     "n8n-community-node-package",
