@@ -1,0 +1,47 @@
+{
+  "name": "@aari/n8n-nodes-aari",
+  "version": "0.1.0",
+  "description": "AARI Execution Firewall — n8n community node",
+  "keywords": [
+    "n8n-community-node-package",
+    "aari",
+    "firewall",
+    "ai",
+    "safety"
+  ],
+  "license": "MIT",
+  "homepage": "https://getaari.com",
+  "author": {
+    "name": "AARI",
+    "email": "hello@getaari.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aari/n8n-nodes-aari.git"
+  },
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc && cp nodes/Aari/aari.svg dist/nodes/Aari/aari.svg",
+    "dev": "tsc --watch"
+  },
+  "files": [
+    "dist"
+  ],
+  "n8n": {
+    "n8nNodesApiVersion": 1,
+    "credentials": [
+      "dist/credentials/AariApi.credentials.js"
+    ],
+    "nodes": [
+      "dist/nodes/Aari/Aari.node.js"
+    ]
+  },
+  "devDependencies": {
+    "typescript": "^5.3.0",
+    "n8n-workflow": "^1.0.0",
+    "@types/node": "^20.0.0"
+  },
+  "peerDependencies": {
+    "n8n-workflow": "^1.0.0"
+  }
+}
